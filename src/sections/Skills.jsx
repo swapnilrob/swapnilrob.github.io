@@ -22,7 +22,7 @@ export default function Skills() {
   );
 
   return (
-    <ParentBento id="skills" num="07" label="Skills" title="Tools I work with">
+    <ParentBento id="skills" num="07" label="Skills" title="Skills and foundations">
       <ShowMoreList items={skills} limit={4} render={render} noun={['category', 'categories']} anchorId="skills" />
     </ParentBento>
   );
