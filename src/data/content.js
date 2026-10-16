@@ -143,11 +143,16 @@ export const projects = [
 ];
 
 export const skills = [
-  { id: 'lang', priority: 1, name: 'Languages', items: ['Python', 'JavaScript', 'C', 'PHP', 'SQL', 'Assembly (8086)'] },
-  { id: 'web', priority: 2, name: 'Web & Backend', items: ['React', 'Node.js', 'Express', 'FastAPI', 'MongoDB', 'MySQL', 'Tailwind CSS'] },
-  { id: 'ai', priority: 3, name: 'AI / ML', items: ['TensorFlow', 'scikit-learn', 'LLMs', 'RAG', 'Multimodal AI', 'OpenRouter', 'Groq'] },
-  { id: 'tools', priority: 4, name: 'Tools & Platforms', items: ['Git', 'GitHub', 'Linux', 'Jupyter', 'Cisco Packet Tracer', 'Cloudinary', 'Stripe'] },
-  { id: 'course', priority: 5, name: 'Relevant Coursework', items: ['Artificial Intelligence', 'Algorithms', 'Data Structures', 'Operating Systems', 'Compiler Design', 'Computer Networks', 'Database Systems', 'Software Engineering', 'Introduction to Robotics'] },
+  { id: 'lang', priority: 1, name: 'Languages', items: ['Python', 'JavaScript', 'C', 'PHP', 'SQL', 'Assembly (8086)', 'Verilog'] },
+  { id: 'ai', priority: 2, name: 'AI / ML', items: ['TensorFlow', 'scikit-learn', 'NumPy', 'Pandas', 'LLMs', 'RAG', 'Multimodal AI', 'OpenRouter', 'Groq'] },
+  { id: 'web', priority: 3, name: 'Web & Backend', items: ['React', 'Node.js', 'Express', 'FastAPI', 'MongoDB', 'MySQL', 'Tailwind CSS'] },
+  { id: 'hw', priority: 4, name: 'Hardware & Embedded', items: ['Arduino', 'Sensor & Actuator Interfacing', 'IR, Ultrasonic & RFID Sensors', 'Servo & DC Motor Control', 'Circuit Analysis', 'Digital Logic Design', 'EMU8086'] },
+  { id: 'tools', priority: 5, name: 'Tools & Platforms', items: ['Git', 'GitHub', 'Linux', 'Jupyter', 'OpenGL', 'Lex/Yacc', 'Cisco Packet Tracer', 'Cloudinary', 'Stripe'] },
+  { id: 'cw-ai', priority: 6, name: 'Coursework · AI & Data', items: ['Artificial Intelligence', 'Algorithms', 'Data Structures', 'Numerical Methods', 'Statistics & Probability', 'Linear Algebra & Fourier Analysis'] },
+  { id: 'cw-theory', priority: 7, name: 'Coursework · Theory', items: ['Discrete Mathematics', 'Automata & Computability', 'Compiler Design'] },
+  { id: 'cw-systems', priority: 8, name: 'Coursework · Systems & Software', items: ['Operating Systems', 'Computer Architecture', 'Database Systems', 'Software Engineering', 'System Analysis & Design', 'Computer Graphics'] },
+  { id: 'cw-ee', priority: 9, name: 'Coursework · Electrical & Electronics', items: ['Circuits & Electronics', 'Electronic Devices & Circuits', 'Digital Logic Design', 'Digital Electronics & Pulse Techniques', 'Microprocessors', 'Computer Interfacing', 'Introduction to Robotics'] },
+  { id: 'cw-net', priority: 10, name: 'Coursework · Networks', items: ['Computer Networks', 'Data Communications'] },
 ];
 
 export const certifications = [
