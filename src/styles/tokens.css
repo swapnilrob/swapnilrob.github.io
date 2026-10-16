@@ -1,0 +1,115 @@
+/* =========================================================
+   Design tokens — colours, type, spacing (both themes)
+   Components use ONLY these variables. Change a colour here
+   and the whole site follows.
+   ========================================================= */
+
+:root {
+  /* colours — light theme */
+  --bg: #F6F4EF;
+  --surface: #FFFFFF;
+  --surface-2: #F2F0EA;
+  --fg: #1A1D24;
+  --muted: #5F6673;
+  --accent: #1F6F65;
+  --accent-soft: rgba(31, 111, 101, .09);
+  --on-accent: #FFFFFF;
+  --border: rgba(26, 29, 36, .09);
+  --border-strong: rgba(26, 29, 36, .17);
+  --nav-bg: rgba(246, 244, 239, .84);
+  --hero-a: #1F6F65;
+  --hero-b: #13423C;
+  --on-hero: #F3FAF8;
+  --on-hero-muted: rgba(243, 250, 248, .78);
+  --hero-chip: rgba(255, 255, 255, .14);
+  --ok: #2C7A4B;
+  --ok-soft: rgba(44, 122, 75, .12);
+  --warn: #94650E;
+  --warn-soft: rgba(148, 101, 14, .12);
+  --backdrop: rgba(15, 18, 22, .62);
+  --toast-bg: #1A1D24;
+  --toast-fg: #F6F4EF;
+  --shadow: 0 1px 2px rgba(26, 29, 36, .04), 0 10px 28px rgba(26, 29, 36, .05);
+  --hero-shadow: 0 12px 32px rgba(0, 0, 0, .18);
+
+  /* type */
+  --font-serif: Lora, Georgia, "Times New Roman", serif;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* spacing and shape */
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --content-max: 960px;
+  --nav-h: 60px;
+  --r-parent: 18px;
+  --r-child: 12px;
+  --r-btn: 10px;
+  --r-pill: 999px;
+
+  color-scheme: light;
+}
+
+/* Device is in dark mode AND the visitor has not picked light */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1216;
+    --surface: #161A20;
+    --surface-2: #1D222A;
+    --fg: #E9E6DF;
+    --muted: #9AA2AE;
+    --accent: #5CC8B8;
+    --accent-soft: rgba(92, 200, 184, .12);
+    --on-accent: #0F1216;
+    --border: rgba(255, 255, 255, .07);
+    --border-strong: rgba(255, 255, 255, .15);
+    --nav-bg: rgba(15, 18, 22, .82);
+    --hero-a: #1A5750;
+    --hero-b: #0D2C28;
+    --on-hero: #EAF6F3;
+    --on-hero-muted: rgba(234, 246, 243, .72);
+    --hero-chip: rgba(255, 255, 255, .10);
+    --ok: #6FCF97;
+    --ok-soft: rgba(111, 207, 151, .14);
+    --warn: #E5B456;
+    --warn-soft: rgba(229, 180, 86, .14);
+    --backdrop: rgba(0, 0, 0, .72);
+    --toast-bg: #E9E6DF;
+    --toast-fg: #0F1216;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 28px rgba(0, 0, 0, .22);
+    color-scheme: dark;
+  }
+}
+
+/* Visitor clicked the toggle and picked dark */
+:root[data-theme="dark"] {
+  --bg: #0F1216;
+  --surface: #161A20;
+  --surface-2: #1D222A;
+  --fg: #E9E6DF;
+  --muted: #9AA2AE;
+  --accent: #5CC8B8;
+  --accent-soft: rgba(92, 200, 184, .12);
+  --on-accent: #0F1216;
+  --border: rgba(255, 255, 255, .07);
+  --border-strong: rgba(255, 255, 255, .15);
+  --nav-bg: rgba(15, 18, 22, .82);
+  --hero-a: #1A5750;
+  --hero-b: #0D2C28;
+  --on-hero: #EAF6F3;
+  --on-hero-muted: rgba(234, 246, 243, .72);
+  --hero-chip: rgba(255, 255, 255, .10);
+  --ok: #6FCF97;
+  --ok-soft: rgba(111, 207, 151, .14);
+  --warn: #E5B456;
+  --warn-soft: rgba(229, 180, 86, .14);
+  --backdrop: rgba(0, 0, 0, .72);
+  --toast-bg: #E9E6DF;
+  --toast-fg: #0F1216;
+  --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 28px rgba(0, 0, 0, .22);
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}

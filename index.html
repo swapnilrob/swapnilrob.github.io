@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <title>Swapnil Rob — CS Undergraduate and AI Researcher</title>
+    <meta name="description" content="Portfolio of Swapnil Rob, a Computer Science & Engineering undergraduate at BRAC University researching AI reliability, hallucination detection and retrieval-augmented generation." />
+
+    <!-- Open Graph: the preview card when the link is shared on LinkedIn etc. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Swapnil Rob — CS Undergraduate & AI Researcher" />
+    <meta property="og:description" content="Research on AI reliability, hallucination detection and RAG, plus full-stack and hardware projects." />
+    <!-- TODO owner: after deploying, add a 1200x630 image as public/og-image.png and uncomment the line below
+         with your real URL, e.g. https://swapnilrob.github.io/portfolio/og-image.png -->
+    <!-- <meta property="og:image" content="https://swapnilrob.github.io/portfolio/og-image.png" /> -->
+
+    <meta name="theme-color" content="#F6F4EF" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0F1216" media="(prefers-color-scheme: dark)" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap" />
+
+    <!-- Applies the saved theme before React loads, so the wrong theme never flashes -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('pf-theme');
+          if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
