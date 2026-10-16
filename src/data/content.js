@@ -152,6 +152,13 @@ export const skills = [
 
 export const certifications = [
    // ---------- Technical ----------
+     { id: 'gci-world-2026', group: 'technical', priority: 0,
+    name: 'GCI World 2026: Data Science & AI',
+    issuer: 'Matsuo-Iwasawa Lab, The University of Tokyo', date: 'Sep 2026 – Present',
+    status: 'In progress',
+    credentialUrl: null,
+    file: null, fileType: 'image' },   // when finished: set file to '/certs/gci-world-2026.jpg', remove status
+
   { id: 'gp-insights', group: 'technical', priority: 1, name: 'From Insights to Influence',
     issuer: 'Grameenphone Academy', date: 'Sep 2026',
     credentialUrl: 'https://www.grameenphone.academy/cert/4a446248b9bb',

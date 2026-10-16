@@ -5,6 +5,7 @@ import Icon from '../components/icons.jsx';
 import { certifications } from '../data/content.js';
 import { readyItems } from '../utils/sortByPriority.js';
 import { asset } from '../utils/asset.js';
+import Badge from '../components/Badge.jsx';
 
 const GROUPS = [['technical', 'Technical'], ['beyond', 'Beyond Academics']];
 
@@ -25,8 +26,10 @@ export default function Certifications({ openLightbox }) {
         title={c.name}
         titleAs="h4"
         href={c.credentialUrl || undefined}
-        sub={subText || <span className="muted-italic">To be added</span>}
-        action={
+        sub={subText
+          ? <>{subText}{c.status && <Badge status={c.status} />}</>
+          : <span className="muted-italic">To be added</span>}
+        action={c.file &&
           <button
             type="button"
             className="chip-link"
