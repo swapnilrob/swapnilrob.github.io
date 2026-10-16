@@ -119,7 +119,7 @@ export const projects = [
     tags: ['Python', 'scikit-learn', 'TensorFlow', 'Pandas'], image: null,
     links: { github: 'https://github.com/swapnilrob/Academic-success-prediction', demo: null, report: '/reports/academic-ml-report.pdf' } },
 
-  { id: 'healthcare-net', priority: 7, title: 'Smart Healthcare Network', subtitle: 'Multi-site hospital network design', year: '',
+  { id: 'healthcare-net', priority: 7, title: 'Smart Healthcare Network', subtitle: 'Multi-site hospital network design', year: '2026',
     context: 'CSE 421 · Computer Networks · Team of 3',
     summary: 'A hospital network in Cisco Packet Tracer connecting 810 devices across 6 medical units. Uses VLSM subnetting from a single /16 block, all four types of static routing alongside RIPv2, DHCP, and a floating static route that takes over when the main link fails.',
     myPart: 'Deployed the DNS, web and email servers across all 6 units, built the full IP address table and configured RIPv2 with static route redistribution.',
@@ -148,11 +148,13 @@ export const skills = [
   { id: 'web', priority: 3, name: 'Web & Backend', items: ['React', 'Node.js', 'Express', 'FastAPI', 'MongoDB', 'MySQL', 'Tailwind CSS'] },
   { id: 'hw', priority: 4, name: 'Hardware & Embedded', items: ['Arduino', 'Sensor & Actuator Interfacing', 'IR, Ultrasonic & RFID Sensors', 'Servo & DC Motor Control', 'Circuit Analysis', 'Digital Logic Design', 'EMU8086'] },
   { id: 'tools', priority: 5, name: 'Tools & Platforms', items: ['Git', 'GitHub', 'Linux', 'Jupyter', 'OpenGL', 'Lex/Yacc', 'Cisco Packet Tracer', 'Cloudinary', 'Stripe'] },
-  { id: 'cw-ai', priority: 6, name: 'Coursework · AI & Data', items: ['Artificial Intelligence', 'Algorithms', 'Data Structures', 'Numerical Methods', 'Statistics & Probability', 'Linear Algebra & Fourier Analysis'] },
-  { id: 'cw-theory', priority: 7, name: 'Coursework · Theory', items: ['Discrete Mathematics', 'Automata & Computability', 'Compiler Design'] },
-  { id: 'cw-systems', priority: 8, name: 'Coursework · Systems & Software', items: ['Operating Systems', 'Computer Architecture', 'Database Systems', 'Software Engineering', 'System Analysis & Design', 'Computer Graphics'] },
-  { id: 'cw-ee', priority: 9, name: 'Coursework · Electrical & Electronics', items: ['Circuits & Electronics', 'Electronic Devices & Circuits', 'Digital Logic Design', 'Digital Electronics & Pulse Techniques', 'Microprocessors', 'Computer Interfacing', 'Introduction to Robotics'] },
-  { id: 'cw-net', priority: 10, name: 'Coursework · Networks', items: ['Computer Networks', 'Data Communications'] },
+  { id: 'coursework', priority: 6, name: 'Relevant Coursework', groups: [
+    { label: 'AI & Data', items: ['Artificial Intelligence', 'Algorithms', 'Data Structures', 'Numerical Methods', 'Statistics & Probability', 'Linear Algebra & Fourier Analysis'] },
+    { label: 'Theory', items: ['Discrete Mathematics', 'Automata & Computability', 'Compiler Design'] },
+    { label: 'Systems & Software', items: ['Operating Systems', 'Computer Architecture', 'Database Systems', 'Software Engineering', 'System Analysis & Design', 'Computer Graphics'] },
+    { label: 'Electrical & Electronics', items: ['Circuits & Electronics', 'Electronic Devices & Circuits', 'Digital Logic Design', 'Digital Electronics & Pulse Techniques', 'Microprocessors', 'Computer Interfacing', 'Introduction to Robotics'] },
+    { label: 'Networks', items: ['Computer Networks', 'Data Communications'] },
+  ] },
 ];
 
 export const certifications = [
